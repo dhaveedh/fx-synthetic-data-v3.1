@@ -1,0 +1,8 @@
+status_code,status_name,seq
+NEW,Accepted,1
+CONF,Validated,2
+SETT,Settled,5
+MATC,Matched,4
+CANC,Cancelled,2
+UNMC,Unmatched,3
+REJT,Rejected,2

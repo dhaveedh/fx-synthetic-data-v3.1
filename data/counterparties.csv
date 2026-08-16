@@ -1,0 +1,11 @@
+counterparty_id,counterparty_name,country,status,buy_bias
+C001,Goldman Sachs,US,Active,0.49
+C002,JPMorgan,US,Active,0.51
+C003,Barclays,UK,Active,0.50
+C004,Deutsche Bank,DE,Active,0.48
+C005,Société Générale,FR,Active,0.50
+C006,UBS,CH,Active,0.51
+C007,HSBC,UK,Active,0.49
+C008,Citibank,US,Active,0.50
+C009,BNP Paribas,FR,Active,0.48
+C010,Morgan Stanley,US,Active,0.51

@@ -1,0 +1,7 @@
+from_status,to_status
+Accepted,Unmatched
+Accepted,Cancelled
+Accepted,Rejected
+Matched,Unmatched
+Unmatched,Matched
+Matched,Settled

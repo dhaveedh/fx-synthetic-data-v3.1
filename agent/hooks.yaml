@@ -1,0 +1,23 @@
+hooks:
+
+  pre_execution:
+    - enforce_max_volume
+    - assign_default_seed
+    - normalise_distribution
+
+  post_generate_fx_data:
+    - validate_schema
+    - validate_referential_integrity
+    - validate_temporal_consistency
+    - validate_lifecycle_transitions
+    - validate_distribution_drift
+    - detect_edge_cases
+
+  on_validation_failure:
+    - feed_report_to_agent
+    - re_parse_with_feedback
+    - re_generate
+
+  post_execution:
+    - compute_stats
+    - log_summary

@@ -1,0 +1,17 @@
+currency_code,currency_name,minor_units
+USD,US Dollar,2
+EUR,Euro,2
+JPY,Japanese Yen,0
+GBP,British Pound,2
+AUD,Australian Dollar,2
+CAD,Canadian Dollar,2
+NZD,New Zealand Dollar,2
+KRW,South Korean Won,0
+CHF,Swiss Franc,2
+HKD,Hong Kong Dollar,2
+NOK,Norwegian Krone,2
+SGD,Singapore Dollar,2
+SEK,Swedish Krona,2
+ILS,Israeli Shekel,2
+MXN,Mexican Peso,2
+CNH,Renminbi,2

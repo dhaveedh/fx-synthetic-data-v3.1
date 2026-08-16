@@ -1,0 +1,5 @@
+trade_type_code,trade_type_name
+SPOT,Spot
+FWDS,Forward
+SWAP,Swap
+OPTION,Option

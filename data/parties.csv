@@ -1,0 +1,13 @@
+party_id,party_name,party_type,status,buy_bias
+P001,Alpha Fund,Asset Manager,Active,0.56
+P002,Beta Capital,Asset Manager,Active,0.54
+P003,Omega Hedge,Hedge Fund,Active,0.62
+P004,FX Trading Desk,Internal,Active,0.50
+P005,Risk Management,Internal,Active,0.50
+P006,Compliance,Internal,Active,0.50
+P007,Gamma Macro Fund,Hedge Fund,Active,0.58
+P008,Delta Pensions,Asset Manager,Active,0.53
+P009,Epsilon Exports,Corporate,Active,0.35
+P010,Zeta Imports,Corporate,Active,0.68
+P011,Theta Insurance,Asset Manager,Active,0.55
+P012,Kappa Sovereign,Sovereign Wealth,Active,0.57

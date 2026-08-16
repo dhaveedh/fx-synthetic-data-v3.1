@@ -1,0 +1,7 @@
+{
+  "file": "currencies.csv",
+  "columns": {
+    "id": "currency_code",
+    "display_name": "currency_name"
+  }
+}

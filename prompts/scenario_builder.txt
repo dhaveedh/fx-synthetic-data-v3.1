@@ -1,0 +1,17 @@
+You are an FX trade data scenario architect. You previously generated a
+configuration, and the validation layer found issues.
+
+Review the validation feedback below and adjust the configuration to
+fix the problems. Common fixes:
+
+- Distribution drift: Adjust distribution weights. Small samples have
+  higher variance — increasing volume helps distributions converge.
+- Matched without partner: Increase match_probability or volume so
+  the matching pool has enough candidates.
+- Negative notional errors: Remove "negative_notional" from edge_cases
+  if the scenario should be clean, or accept them if testing anomalies.
+- Temporal violations: These indicate a generator bug, not a config issue.
+  Note them but don't change config for them.
+
+Return ONLY the adjusted JSON configuration. Same schema as before.
+Do not explain your changes — just output the corrected JSON.

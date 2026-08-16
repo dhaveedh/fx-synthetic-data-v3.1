@@ -1,0 +1,16 @@
+skills:
+
+  - name: generate_fx_data
+    description: Generate synthetic FX trades with organic edge cases and lifecycle simulation
+
+  - name: validate_dataset
+    description: Deep validation — schema, integrity, temporal, distribution drift, edge case detection
+
+  - name: inject_edge_cases
+    description: "[DEPRECATED] Edge cases now injected organically during generation"
+
+  - name: parse_intent
+    description: Convert natural language to generation config via Claude/Bedrock
+
+  - name: feedback_loop
+    description: Feed validation results back to agent for config adjustment

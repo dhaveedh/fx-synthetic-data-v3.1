@@ -1,0 +1,8 @@
+{
+  "file": "trade_lifecycle.csv",
+  "columns": {
+    "id": "status_code",
+    "display_name": "status_name",
+    "order": "seq"
+  }
+}

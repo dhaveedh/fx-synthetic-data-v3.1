@@ -1,0 +1,27 @@
+{
+  "fields": [
+    { "name": "trade_id", "kind": "lifecycle" },
+    { "name": "version", "kind": "lifecycle" },
+    { "name": "status", "kind": "lifecycle" },
+    { "name": "party", "kind": "reference_choice", "source": "parties" },
+    { "name": "counterparty", "kind": "reference_choice", "source": "counterparties" },
+    { "name": "currency", "kind": "weighted_choice", "source": "currency_config.distribution", "options_from": "reference_data:currencies" },
+    { "name": "base_ccy", "kind": "derived", "fn": "split_base_ccy", "edge_cases": ["mismatched_ccy"] },
+    { "name": "counter_ccy", "kind": "derived", "fn": "split_counter_ccy" },
+    { "name": "trade_type", "kind": "weighted_choice", "source": "trade_type_distribution" },
+    { "name": "tenor", "kind": "derived", "fn": "random_tenor" },
+    { "name": "notional", "kind": "numeric_range", "min": 100000, "max": 1000000, "round": 2, "edge_cases": ["extreme_values", "negative_notional"] },
+    { "name": "notional_ccy", "kind": "derived", "fn": "compute_notional_ccy" },
+    { "name": "trade_date", "kind": "derived", "fn": "trade_date_near_reference", "edge_cases": ["future_dates"] },
+    { "name": "settlement_date", "kind": "derived", "fn": "settlement_date_offset" },
+    { "name": "value_date", "kind": "derived", "fn": "value_date_offset" },
+    { "name": "spot_rate", "kind": "numeric_range", "min": 0.5, "max": 1.5, "round": 5, "edge_cases": ["null_rates"] },
+    { "name": "forward_points", "kind": "derived", "fn": "forward_points_for_type" },
+    { "name": "direction", "kind": "derived", "fn": "direction_for_party" },
+    { "name": "fx_option_flag", "kind": "bernoulli", "p": 0.1 },
+    { "name": "trade_venue", "kind": "reference_choice", "source": "venues" },
+    { "name": "broker", "kind": "reference_choice", "source": "brokers" },
+    { "name": "matched_trade_id", "kind": "lifecycle" },
+    { "name": "last_action_tms", "kind": "lifecycle" }
+  ]
+}

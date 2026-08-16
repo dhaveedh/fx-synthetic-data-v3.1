@@ -1,0 +1,9 @@
+{
+  "file": "parties.csv",
+  "columns": {
+    "id": "party_id",
+    "status_filter": "status",
+    "weight": "buy_bias"
+  },
+  "active_value": "Active"
+}

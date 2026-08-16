@@ -1,0 +1,7 @@
+{
+  "file": "trade_status_transitions.csv",
+  "columns": {
+    "from": "from_status",
+    "to": "to_status"
+  }
+}

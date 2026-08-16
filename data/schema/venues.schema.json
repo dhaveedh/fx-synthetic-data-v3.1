@@ -1,0 +1,7 @@
+{
+  "file": "venues.csv",
+  "columns": {
+    "id": "venue_name",
+    "key": "venue_id"
+  }
+}

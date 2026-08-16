@@ -1,0 +1,7 @@
+{
+  "file": "trade_types.csv",
+  "columns": {
+    "id": "trade_type_name",
+    "key": "trade_type_code"
+  }
+}
